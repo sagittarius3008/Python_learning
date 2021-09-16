@@ -1,6 +1,3 @@
-# \nで改行
-print("hello \nworld")
-
 greeting = "hello"+"world"
 yeah = "!!"
 print(greeting)
@@ -12,8 +9,3 @@ print("{}{}".format(greeting,yeah))
 balance = 100
 print("balance: {}円".format(balance))
 print(f"balance: {balance}円")
-
-# type,idの表示
-print(type("hello"))
-print(type(1))
-print(id(1))
