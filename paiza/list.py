@@ -59,9 +59,26 @@
 # print(sorted(weapons))
 # print(sorted(weapons,reverse=True)) # 逆順
 
-apples = [310, 322, 292, 288, 300, 346]
-print(sorted(apples,reverse = True))
+# apples = [310, 322, 292, 288, 300, 346]
+# print(sorted(apples,reverse = True))
 
-words = ["pumpkin", "orange", "apple", "carrot", "onion"]
-# ここに、要素をソートして表示するコードを記述する
-print(sorted(words))
+# words = ["pumpkin", "orange", "apple", "carrot", "onion"]
+# # ここに、要素をソートして表示するコードを記述する
+# print(sorted(words))
+
+# # enumerate:ループでインデックスも使いたいとき
+# enemies = ["スライム", "モンスター", "ゾンビ", "ドラゴン", "魔王"]
+# for (i, boss) in enumerate(enemies):
+#     print(f"{i + 1}番目の{boss}が現れた")
+
+# numbers = [12, 34, 56, 78, 90]
+
+# # ここに、各要素を3倍にして新しいリストを作成するコードを記述する
+# numbers2 =[]
+# for i in numbers:
+#     numbers2.append(i*3)
+# print(numbers2)
+
+# 初期値を指定してリストを作る
+num = ["paiza" for i in range(5)]
+print(num)
