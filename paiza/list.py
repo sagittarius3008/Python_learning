@@ -54,3 +54,14 @@
 # print(janken)
 # print(janken[random.randrange(num)])
 
+# sortedメソッド：リストの整列（文字コード順）
+# weapons = ["イージス","ウィンド","アース","イナズマ"]
+# print(sorted(weapons))
+# print(sorted(weapons,reverse=True)) # 逆順
+
+apples = [310, 322, 292, 288, 300, 346]
+print(sorted(apples,reverse = True))
+
+words = ["pumpkin", "orange", "apple", "carrot", "onion"]
+# ここに、要素をソートして表示するコードを記述する
+print(sorted(words))
