@@ -71,17 +71,65 @@ letters = [[[0,0,1,1,0,0],
 
 # 6-10 不正解！！！！！！！！！
 # 初期の地図
-landmap = [["森" for i in range(19)] for j in range(10)]
-landmap[2][9] = "城"
-landmap[0][0] = "町"
-landmap[0][18] = "町"
-landmap[9][0] = "町"
-landmap[9][18] = "町"
-for i, line in enumerate(landmap):
-    for j, area in enumerate(line):
-        # if文を追加する
-        if (i % 9 == 0 or j % 9 == 0) and area == "森":
-            print("＋", end="")
-        else:
-            print(area, end="")
-    print()
+# landmap = [["森" for i in range(19)] for j in range(10)]
+# landmap[2][9] = "城"
+# landmap[0][0] = "町"
+# landmap[0][18] = "町"
+# landmap[9][0] = "町"
+# landmap[9][18] = "町"
+# for i, line in enumerate(landmap):
+#     for j, area in enumerate(line):
+#         # if文を追加する
+#         if (i % 9 == 0 or j % 9 == 0) and area == "森":
+#             print("＋", end="")
+#         else:
+#             print(area, end="")
+#     print()
+
+# 標準入力から、2次元リストを読み込む
+# 標準入力のデータ
+# 0,0,1,1,0,0
+# 0,1,0,0,1,0
+# 1,0,0,0,0,1
+# 1,1,1,1,1,1
+# 1,0,0,0,0,1
+# 1,0,0,0,0,1
+# _
+
+# letter_A = []
+# while True:
+#     line = input()
+#     if line == "_":
+#         break
+#     else:
+#         letter_A.append(line.split(","))
+# print(letter_A, end = "")
+
+
+# 2次元リストで画像を表示する
+
+# 画像用リスト
+players_img = [
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Empty.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Dragon.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Crystal.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Hero.png",
+    "https://paiza-webapp.s3.amazonaws.com/files/learning/rpg/Heroine.png"]
+
+# 配置データを読み込み
+team = []
+while True:
+    line = input()
+    if line == "_":
+        break
+    team.append(line.split(","))
+
+# ここから先を入力してください
+print("<table>")
+for line in team:
+    print("<tr>")
+    for person in line:
+        # fstringだと微妙に余白が狂う？？
+        print("<td><img src='" + players_img[int(person)] + "'></td>")
+    print("</tr>")    
+print("</table>")     
