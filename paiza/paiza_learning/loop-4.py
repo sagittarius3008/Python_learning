@@ -20,16 +20,19 @@
 #             print("NO")
 
 
-lang_count = input()
+lang_count = int(input()) # input()
 lang = []
-for i in lang_count:
+for i in range(lang_count): # lang_count
     lang.append(input())
-    
+# lang = ['c', 'd']
+
 count = int(input())
-for i in range(len(lang)):
+
+for i in lang:
     for j in range(count):
         ans = input()
-        if lang[i] in ans:
+        
+        if i in ans:
             print("YES")
         else:
             print("NO")
