@@ -10,7 +10,7 @@ while len(n) < 3:
 print(n)
 
 
-書いたコード
+# 書いたコード
 num = input()
 
 if len(num) == 3:
