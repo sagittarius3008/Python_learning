@@ -17,16 +17,13 @@
 # 5 0
 
 # num = int(input())
-
 # lis = []
+
 # for i in range(num):
 #     a =list(map(int, input().split()))
 #     lis.append(a)
 
-
-# # print(lis)
 # lis.sort(reverse=True)
-# # print(lis)
 
 # for i in range(num):
 #     for x,j in enumerate(lis[i]):
@@ -64,7 +61,7 @@ for i in range(N):
 # print(kingin) # [[3, 2], [4, 0], [0, 5], [3, 3]]
 # bでソート
 kingin.sort(reverse=True)
-
+print(kingin)
 # 表示はaを前に
 for i in range(N):
     [a, b] = kingin[i]
