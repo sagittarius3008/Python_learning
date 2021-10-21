@@ -11,7 +11,7 @@ zaisan = {} # 辞書型の初期化
 
 for i in range(n):
     [s, a] = input().split()
-    zaisan[s] = a # 一週目：{'Kirishima': '1'} 二週目：{'Kirishima': '1', 'Kyoko': '2'}
+    zaisan[s] = a # 一週目：{'Kirishima': '1'} 二週目：{'Kirishima': '1', 'Kyoko': '2'} # 要素を追加
 S = input()
 
 print(zaisan[S]) # => 1
